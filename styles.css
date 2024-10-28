@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.6s ease-in-out; /* this is imp ,this also making transition effect on background image, changes made alongwith toggle button */
+    font-family: "Comic Sans MS", cursive;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    .modeMessage{
+        width:50vw;
+        margin:30vh auto;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+
+
+#button{
+
+    width: 150px;
+    height: 8vh;
+    border: 10px solid #212121;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #212121;
+    
+
+    #slide{
+        border-radius: 30px;
+        z-index: 100;
+        /* box-shadow: 0 0 20px white; */
+    }
+
+    img {
+        position: absolute;
+        padding: 2px;
+    }
+
+    #moon {
+        position: absolute;
+        left: 5px; /* Position moon icon on the left inside the button */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #sun {
+        position: absolute;
+        right: 5px; /* Position sun icon on the right inside the button */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
